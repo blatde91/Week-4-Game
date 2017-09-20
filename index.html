@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+
 	<meta charset="UTF-8">
 	<title>Crystal Collector</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
@@ -9,6 +9,38 @@
 
 </head>
 <body>
+
+<header><h1 class='heading'>Crystals Collector!</h1></header>
+
+<div class='instructions'>
+	<p>You will be given a random number at the start of the game.</p>
+	<br>
+	<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score</p>
+	<br>
+	<p>You win the game by matching your total score to the random number given. You lose the game if your total score goes above the random number</p>
+	<br>
+	<p>The value of each crystal is hidden from you until you click on it.</p>
+	<br>
+	<p>Each time the game starts, the game will change the values of each crystal.</p>
+</div>
+
+<div id='randomNumber'></div>
+
+<div id='winsAndLosses'>
+	<p>Wins:<span id='winCount'></span></p>
+	<p>Losses:<span id='lossCount'></span></p>
+</div>
+
+<div id='crystalDisplay'>
+	<div id='crystal1'></div>
+	<div id='crystal2'></div>
+	<div id='crystal3'></div>
+	<div id='crystal4'></div>
+</div>
+
+<div id='scoreDisplay'>
+	
+</div>
 	
 </body>
 </html>
