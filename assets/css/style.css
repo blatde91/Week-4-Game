@@ -1,0 +1,73 @@
+body {
+	font-family: arial;
+	background-image: url(../images/hypnotize.png);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+	overflow: auto;
+}
+
+.heading {
+	width: 25%;
+	background-color: purple;
+	padding: 20px;
+	margin: 10px 0px 0px 30px;
+}
+
+h1 {
+	color: white;
+	font-size: 40px;
+}
+
+img {
+	border: 2px solid teal;
+}
+
+.instructions {
+	background-color: red;
+	margin: 10px 0px 10px 30px;
+	padding: 20px;
+	width: 50%;
+	color: white;
+	
+}
+.crystalImg:nth-child(1) {
+	margin-left: 30px;
+}
+
+.crystalImg {
+	float: left;
+	margin: 10px 5px 10px 0px;
+}
+
+#winsAndLosses {
+	float: left;
+	background-color: green;
+	margin: 10px 0px 10px 30px;
+	padding: 20px;
+	color: white;
+}
+
+#scoreContainer {
+	float: left;
+	background-color: blue;
+	margin: 10px 0px 10px 30px;
+	padding: 20px;
+	color: white;
+}
+
+#winLoss {
+	float: left;
+	background-color: yellow;
+	margin: 10px 0px 10px 30px;
+	padding: 20px;
+	color: white;
+	display: none;
+}

@@ -12,7 +12,7 @@
 
 <header><h1 class='heading'>Crystals Collector!</h1></header>
 
-<div class='instructions'>
+<div class='instructions clearfix'>
 	<p>You will be given a random number at the start of the game.</p>
 	<br>
 	<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score</p>
@@ -24,23 +24,33 @@
 	<p>Each time the game starts, the game will change the values of each crystal.</p>
 </div>
 
-<div id='randomNumber'></div>
+
+
+<div class='clearfix' id='crystalDisplay'>
+	<div><img class='crystalImg' src='assets/images/redcrystal.jpg'></div>
+	<div><img class='crystalImg' src='assets/images/greencrystal.jpg'></div>
+	<div><img class='crystalImg' src='assets/images/bluecrystal.png'></div>
+	<div><img class='crystalImg' src='assets/images/yellowcrystal.jpg'></div>	
+</div>
 
 <div id='winsAndLosses'>
-	<p>Wins:<span id='winCount'></span></p>
-	<p>Losses:<span id='lossCount'></span></p>
+	<h2>Wins: <span id='winCount'></span></h2>
+	<br>
+	<h2>Losses: <span id='lossCount'></span></h2>
 </div>
 
-<div id='crystalDisplay'>
-	<div id='crystal1'></div>
-	<div id='crystal2'></div>
-	<div id='crystal3'></div>
-	<div id='crystal4'></div>
+<div id='scoreContainer'>	
+	<h2>Current Score: <span id='currentNumber'></span></h2>
+	<br>
+	<h2>Target Score: <span id='scoreDisplay'></span></h2>
 </div>
 
-<div id='scoreDisplay'>
-	
+<div id='winLoss'>
+	<h2 id='displayWinCondition'></h2>
 </div>
-	
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>
